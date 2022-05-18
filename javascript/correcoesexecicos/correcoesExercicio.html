@@ -13,13 +13,14 @@
   </head>
   <body>
     <div>
-      <p id="nomeLetras">adsdasd</p>
+      <p id="nomeLetras"></p>
       <p id="nomeMaiusculas"></p>
       <p id="nomeMinusculas"></p>
     </div>
     <script>
       // var nome = window.prompt('Qual é seu nome?');
       const nome = window.prompt('Qual é seu nome?'); // Quando a variável não for mais ser modificada é sempre melhor utilizar "const" para atribuí-la, variáveis do tipo const não podem mais ser atribuidas novamente.
+
 
       const nomeLetras = document.getElementById('nomeLetras');
       const nomeMaiusculas = document.getElementById('nomeMaiusculas');
@@ -33,7 +34,7 @@
 
       // document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`);
       nomeMinusculas.innerHTML = `Seu nome em minúsculas é ${nome.toLowerCase()}`;
-
+    
       /*Formatando String
         
         s.length - quantos caracteres a string tem
