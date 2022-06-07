@@ -18,16 +18,12 @@
     <input type="button" value="Somar" onclick="somar()">
 
     <div>
-        <p id="res">
-           <strong>Resultado</strong> =
+        <p>
+           <strong>Resultado</strong> = <strong id="res"></strong>
         </p>
     </div>
     <script>
         function somar() {
-            /*
-            
-            var s = n1 + n2
-            res.innerHTML = `` */
 
             var res = document.getElementById('res')
             var tn1 = document.getElementById('txtn1')
@@ -36,6 +32,7 @@
             var n2 = Number(tn1.value)
             var s = n1 + n2
             res.innerHTML = s
+            
         }
     </script>
 </body>
