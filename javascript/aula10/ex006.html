@@ -23,10 +23,11 @@
     </div>
 
     <script>
-        a.addEventListener('click', clicar)
-        a.addEventListener('onmouseover', entrar)
-        a.addEventListener('mouseout', sair)
         var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        
         function clicar() {
             a.innerText = 'Clicou!'
             a.style.background = 'red'
@@ -34,7 +35,7 @@
 
         function entrar() {
             a.innerText = 'Entrou!'
-            a.style.background = 'blue'
+            a.style.background = 'green'
         }
 
         function sair() {
